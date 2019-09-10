@@ -60,7 +60,48 @@ namespace The_Real_C_Sharp_Challenge_Part_2
             }
             Console.WriteLine("\n");
 
-            //
+            //4 copies of last words of sentence
+            string stlrng;
+            int line = 0;
+            Console.Write("input a stirng :");
+            stlrng = Console.ReadLine();
+            if (stlrng.Length>4)
+            {
+                Console.WriteLine(stlrng.Length < 4 ? stlrng + stlrng + stlrng : stlrng.Substring(stlrng.Length - 4) + stlrng.Substring(stlrng.Length - 4) + stlrng.Substring(stlrng.Length - 4) + stlrng.Substring(stlrng.Length - 4) + stlrng.Substring(stlrng.Length - 4));
+
+
+            }
+            //Difficulty: medium
+            string lol;
+            int lastwords = 0;
+            Console.WriteLine("Input a string");
+            lol = Console.ReadLine();
+            if (lol.Length>4)
+            {
+                Console.WriteLine(lol.Length < 4 ? lol + lol + lol : lol.Substring(lol.Length - 4) + lol.Substring(lol.Length - 4) + lol.Substring(lol.Length - 4) + lol.Substring(lol.Length - 4));
+            }
+
+            //multiple of 3 or 7 return true
+            Console.WriteLine("if num = 3 or 7 return true ootherwise return false");
+            Console.WriteLine("Input a num");
+            int st = Convert.ToInt32(Console.ReadLine());
+            if (st > 0)
+            {
+                Console.WriteLine(st % 3 == 0 || st % 7 == 0);
+            }
+
+            //pc talk back
+            Console.WriteLine("If your texts include hello it will true");
+            Console.WriteLine("input a fuking string ");
+            string fuck = Console.ReadLine();
+            Console.WriteLine((fuck.Length < 6 && fuck.Equals("Hello")) || (fuck.StartsWith("Hello") && fuck[5] == ' '));
+
+            //cut 2
+            Console.WriteLine("another string");
+            fuck = Console.ReadLine();
+            Console.WriteLine(fuck.StartsWith("Hello"));
+
+
 
         }
         public static int test(int x, int y)
